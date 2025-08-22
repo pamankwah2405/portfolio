@@ -101,6 +101,7 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 .contact-section,
 .about-section,
 .skills-section {
@@ -147,6 +148,64 @@ h2 {
     text-decoration: none;
 }
 
+.contact-section p a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+/* Experience Timeline Section */
+.experience-section {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.experience-section h2 i {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem; /* Space for the timeline line */
+    border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: calc(-1.5rem - 6px + 1px); /* -(padding) - (dot_width/2) + (border_width/2) */
+    top: 0.2rem;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.timeline-content .job-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--text-color);
+}
+
+.timeline-content .company-info,
+.timeline-content .date-info {
+    font-size: 0.9rem;
+    margin: 0 0 0.25rem 0;
+    color: var(--secondary-text-color);
+}
 
 .skills-section ul {
     list-style: none;
@@ -176,37 +235,6 @@ h2 {
     padding: 0.25rem 0.75rem;
     border-radius: 12px;
     font-size: 0.8rem;
-}
-
-.stack-section {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-    box-sizing: border-box;
-}
-
-.stack-section h2 i {
-    vertical-align: middle;
-    margin-right: 0.5rem;
-}
-
-.stack-icons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.stack-icons i {
-    font-size: 2.5rem;
-    color: var(--secondary-text-color);
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.stack-icons i:hover {
-    color: var(--accent-color);
-    transform: scale(1.1);
 }
 
 /* Right Main Content Styles */
@@ -313,6 +341,10 @@ h2 {
     transform: translateY(0);
 }
 
+.tile-view-btn:hover {
+    background-color: #a30626; /* Darker accent */
+}
+
 /* New CSS for Project Filtering */
 .filter-buttons {
     display: flex;
@@ -391,7 +423,7 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .book-btn {
@@ -404,6 +436,8 @@ h2 {
 
 .book-btn:hover {
     background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .email-btn {
@@ -416,6 +450,8 @@ h2 {
 
 .email-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 #contactForm {
@@ -444,10 +480,13 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contactForm button:hover {
     background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 /* New CSS for Image Modal */
@@ -537,11 +576,13 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .modal-view-btn:hover {
     background-color: #a30626; /* Darker accent */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .modal-view-btn i {
