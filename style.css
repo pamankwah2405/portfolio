@@ -80,6 +80,27 @@ body {
     color: var(--accent-color);
     transform: scale(1.15); /* Slight zoom effect on hover */
 }
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #a30626; /* Darker accent */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 .contact-section,
 .about-section,
 .skills-section {
